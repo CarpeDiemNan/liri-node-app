@@ -37,18 +37,18 @@ client.post('statuses/update', {status: 'Almost time for a glass of wine :)'})
 
 
   // Load your image
-var data = fs.readFile('horse.jpg');
-client.post('media/upload', {media: data})
-  .then(function () {
-    console.log(media);
-    var status = {
-      status: 'I love Horses too!',
-      media_ids: media.media_id_string // Pass the media id string
-    }
-  })
-  .catch(function (error) {
-    throw error;
-  })
+// var data = fs.readFile('horse.jpg');
+// client.post('media/upload', {media: data})
+//   .then(function () {
+//     console.log(media);
+//     var status = {
+//       status: 'I love Horses too!',
+//       media_ids: media.media_id_string // Pass the media id string
+//     }
+//   })
+//   .catch(function (error) {
+//     throw error;
+//   })
 
 
 
