@@ -1,0 +1,111 @@
+ 
+body{
+
+	background-color: #e5e6e6;
+	 
+}
+ #header{
+ 	font-size: 28px;
+ 	color: #4aaaa5;
+ 	background-color: #ffffff;
+ 	width: 100%;
+ 	position: fixed;
+ 	padding: 40px;
+ 	top: 0;
+ 	left: 0;
+
+    tab-size: 36;
+ }
+
+ #content {
+	margin: 50px;
+
+
+ }
+ a {
+ 	color: #777777;
+ 	font-size: 16px;
+ }
+ .projects {
+	background-color: #4aaaa5;
+ 	margin: 25px;
+ 	float: left;
+ 	color: #ffffff;
+ 	font-size: 12px;
+ }
+
+#message {
+	clear: both;
+	min-height:120px;
+}
+  
+
+ #bio-image{
+ 	float: left;
+ 	margin: 10px;
+ }
+
+ .wrapper{
+
+	clear: both;
+	overflow: auto;
+ 	background-color: #ffffff;
+	width: 400px;
+	/*margin: 0 auto 0 auto;*/
+
+	margin-left: 45px;
+	padding: 20px;
+
+ }
+ #about-me{
+
+ 	font-size: 38px;
+ 	color: #4aaaa5; 	 
+ }
+ #aside{
+ 	background-color: #ffffff;
+ 	padding: 40px;
+ 	color: #4aaaa5;
+ 	/*width: 170px;*/
+ 	width: 20%;
+ 	position: absolute;
+ 	bottom: 200px;
+ 	right: 10px;
+ 	/*right: 20%;*/
+ }
+ #footer{
+ 	background-color: #eee;
+ 	text-align: center;
+ }
+ /* Use media queries to provide responsiveness to different screen-viewing sizes*/
+
+ @media screen and (max-width: 980px) {
+	.wrapper {
+
+	}
+
+
+ }	
+  
+ @media screen and (max-width: 768px){
+ 	.wrapper {
+ 		width: 300px;
+ 		background-color: #ffbf80;
+ 	}
+ }
+
+ @media screen and (max-width: 640px) {
+	/*make header static so it doesn't take up space on small screen */
+ 	#header {
+		position: static;
+ 	}
+ 	.wrapper {
+ 		width: 200px;
+ 		background-color: #9fdf9f;
+ 	}
+	/*make aside with contact info go to bottom on small screen*/
+	#aside {
+		position: relative;
+
+	}
+ }

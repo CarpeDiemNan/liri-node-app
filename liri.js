@@ -5,6 +5,8 @@ var inquirer = require("inquirer");
 var request = require('request'); 
 var Spotify = require('node-spotify-api');
 
+
+
 // read key file which gets my unique keys from the .env file
 
 fs.readFile('keys.js', "utf8", function(error, data){
@@ -152,5 +154,20 @@ fs.readFile("./random.txt", "utf8", function(error, data) {
 
 });
 
+//******************  PORTFOLIO *******************************************
+
+
+// link to my updated portfolio
+//  fs.readFile("portfolio.html", "utf8", function(error, data) {  
+
+//   // If the code experiences any errors it will log the error to the console.
+//   if (error) {
+//     return console.log(error);
+//   }
+
+//   // We will then print the contents of data
+//   console.log(data);   
+
+// });
 
      
