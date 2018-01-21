@@ -21,6 +21,7 @@
     "inquirer": "^5.0.0",
     "node-spotify-api": "^1.0.7",
     "spotify-web-api-node": "^2.5.0",
+    "twitter-node": "0.0.2",
     "weather.js": "^0.1.0"
   }
 }

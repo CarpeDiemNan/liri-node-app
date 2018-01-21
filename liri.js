@@ -95,7 +95,42 @@ if(process.argv[2] == "spotify-this-song"){
     };
 
 
+// *******************  MOVIES - OMDB API ***************************************
 
+// command line example to get movie information
+
+// $ node liri "movie-this" "Rocky"
+
+if(process.argv[2] == "movie-this"){
+  var movie = process.argv[3];
+  // request('http://www.omdbapi.com/?i=tt3896198&apikey=dd5c4259', function (error, response, body) {
+  request('http://www.omdbapi.com/?t=' + movie + '&apikey=dd5c4259', function (error, response, body) {
+  
+  console.log('error:', error); // Print the error if one occurred
+  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+  console.log('body:', body); // Print the HTML for the Google homepage.
+});
+}
+
+// ***********************  USE FS TO READ RANDOM.TXT AND USE IN COMMAND **************************
+
+fs.readFile("./random.txt", "utf8", function(error, data) {
+ 
+  // If the code experiences any errors it will log the error to the console.
+  if (error) {
+    return console.log(error);
+  }
+
+  // We will then print the contents of data
+  console.log(data);
+
+  // Then split it by commas (to make it more readable)
+  var dataArr = data.split(",");
+
+  // We will then re-display the content as an array for later use.
+  console.log(dataArr);
+
+});
 
 
      
