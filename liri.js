@@ -114,21 +114,41 @@ if(process.argv[2] == "movie-this"){
 
 // ***********************  USE FS TO READ RANDOM.TXT AND USE IN COMMAND **************************
 
+//    I realized that I should have put all the above commands inside each of their own functions,  
+//    that way I could've just called the functions to complete this last part of the homework 
+//    So I pseudo coded what I would've done had I put the above in functions.
+
 fs.readFile("./random.txt", "utf8", function(error, data) {
  
   // If the code experiences any errors it will log the error to the console.
   if (error) {
     return console.log(error);
   }
-
+  var command = data;
   // We will then print the contents of data
+  console.log("READING RANDOM.TXT +++++++++++++++++++++++++++++++++++++++")
   console.log(data);
 
-  // Then split it by commas (to make it more readable)
+  // Then split it by commas - dataArr[0] will be command (get, post, movie-this )
+  //  and  dataArr[1] will be title, tweet, person -  user wants to get info on
   var dataArr = data.split(",");
 
-  // We will then re-display the content as an array for later use.
-  console.log(dataArr);
+  // if(dataArr[0] == "spotify-this-song"){
+  //   do spotify function
+  // }
+
+  // if(dataArr[0] == "get"){
+  //   do twitter get function
+  // }
+
+  // if(dataArr[0] == "post"){
+  //   do twitter post function
+  // }
+
+  // if(dataArr[0] == "movie-this"){
+  //   do movie function
+  // }
+   
 
 });
 
